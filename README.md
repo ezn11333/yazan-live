@@ -1,4 +1,4 @@
-# Yazan Live
+# Yazanlib/main.dart Live
 
 تطبيق يزن لايف للغرف الصوتية والدردشة والهدايا.
 
