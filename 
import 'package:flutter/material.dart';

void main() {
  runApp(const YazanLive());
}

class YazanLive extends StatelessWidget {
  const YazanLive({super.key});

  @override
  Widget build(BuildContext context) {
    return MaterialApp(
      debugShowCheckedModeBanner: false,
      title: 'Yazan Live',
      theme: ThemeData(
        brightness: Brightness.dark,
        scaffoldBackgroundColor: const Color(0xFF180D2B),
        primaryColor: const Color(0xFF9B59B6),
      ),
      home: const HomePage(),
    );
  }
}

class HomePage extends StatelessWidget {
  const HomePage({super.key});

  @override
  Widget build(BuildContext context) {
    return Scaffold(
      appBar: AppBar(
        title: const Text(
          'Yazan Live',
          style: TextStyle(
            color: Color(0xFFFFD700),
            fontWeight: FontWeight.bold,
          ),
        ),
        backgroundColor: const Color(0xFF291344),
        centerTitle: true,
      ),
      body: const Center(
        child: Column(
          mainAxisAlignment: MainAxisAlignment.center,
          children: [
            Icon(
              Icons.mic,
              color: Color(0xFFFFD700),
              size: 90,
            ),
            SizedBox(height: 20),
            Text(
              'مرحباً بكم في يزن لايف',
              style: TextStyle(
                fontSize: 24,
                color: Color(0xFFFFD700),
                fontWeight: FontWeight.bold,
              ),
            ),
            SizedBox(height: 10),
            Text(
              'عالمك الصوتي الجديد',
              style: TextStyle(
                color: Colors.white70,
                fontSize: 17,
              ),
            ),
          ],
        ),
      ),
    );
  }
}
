@@ -1,0 +1,74 @@
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const YazanLive());
+}
+
+class YazanLive extends StatelessWidget {
+  const YazanLive({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Yazan Live',
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: const Color(0xFF180D2B),
+        primaryColor: const Color(0xFF9B59B6),
+      ),
+      home: const HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Yazan Live',
+          style: TextStyle(
+            color: Color(0xFFFFD700),
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        backgroundColor: const Color(0xFF291344),
+        centerTitle: true,
+      ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.mic,
+              color: Color(0xFFFFD700),
+              size: 90,
+            ),
+            SizedBox(height: 20),
+            Text(
+              'مرحباً بكم في يزن لايف',
+              style: TextStyle(
+                fontSize: 24,
+                color: Color(0xFFFFD700),
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              'عالمك الصوتي الجديد',
+              style: TextStyle(
+                color: Colors.white70,
+                fontSize: 17,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
